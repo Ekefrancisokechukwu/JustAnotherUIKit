@@ -5,6 +5,7 @@ const ActiveContext = createContext();
 const ActiveProvider = ({ children }) => {
   const [currentPage, setCurrentPage] = useState("#home");
   const [timeOfLastClick, setTimeOfLastClick] = useState(0);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <ActiveContext.Provider
@@ -13,6 +14,8 @@ const ActiveProvider = ({ children }) => {
         setCurrentPage,
         setTimeOfLastClick,
         timeOfLastClick,
+        menuOpen,
+        setMenuOpen,
       }}
     >
       {children}

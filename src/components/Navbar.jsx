@@ -1,6 +1,6 @@
 import { useActiveLink } from "../AppContext";
 
-const links = [
+export const links = [
   {
     path: "#home",
     label: "Home",
@@ -34,7 +34,7 @@ const Navbar = () => {
                   setTimeOfLastClick(Date.now());
                 }}
                 href={link.path}
-                className={`text-[16px] font-[200] px-3 py-4 inline-block ${
+                className={`text-[16px] transition duration-300 font-[200] px-3 py-4 inline-block ${
                   link.path === currentPage
                     ? "font-bold text-white"
                     : "text-white/50 "

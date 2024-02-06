@@ -9,7 +9,7 @@ const About = () => {
       id="about"
       className="py-20 scroll-mt-10 lg:px-0 px-5  mx-auto max-w-[1014px]"
     >
-      <h1 className="text-white font-bold text-[40px]">About</h1>
+      <h1 className="text-white font-bold sm:text-[40px] text-[27px]">About</h1>
 
       <div className="mt-8 text-white space-y-4">
         <p>
